@@ -5,9 +5,13 @@
 <title>Play Doom with JS-DOS</title>
 <!-- Load js-dos-api.js from your GitHub repo via jsDelivr CDN -->
 <script src="https://nunya-bidness.github.io/html-doom/js-dos-api.js"></script>
+<style>
+body,html{margin:0;padding:0;height:100%;overflow:hidden}
+#doomContainer{width:100vw;height:100vh}
+</style>
 </head>
 <body>
-<div id="doomContainer"  style="width: 800px; height: 600px; border: 1px solid #000;"></div>
+<div id="doomContainer"  style="width: 100%; height: 100%; border: 0px solid #000;"></div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var dosbox = new Dosbox({
